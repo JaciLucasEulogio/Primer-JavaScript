@@ -3,7 +3,7 @@
 let rpta, opc, cantidad=0, subTotal=0, total =0, precio, dejaComprar;
 
 function Menu(){
-    return prompt("---------PRODUCTOS--------- \n [1] Leche ------- S/.3.50 \n [2] Queso kg ------- S/7.00  \n [3] Mantequilla ---- S/7.00  \n [4] Pan unid ----------- S/0.20 \n [5] Mandarina kg -------- S/3.00 \n [6] Salir \n [7] Dejar de comprar \n Ingrese el número de producto que desea comprar: ");
+    return prompt("---------PRODUCTOS--------- \n [1] Leche ------- S/.3.50 \n [2] Queso kg ------- S/7.00  \n [3] Mantequilla ---- S/7.00  \n [4] Pan x10unid ----------- S/2.00 \n [5] Mandarina kg -------- S/3.00 \n [6] Salir \n [7] Dejar de comprar \n Ingrese el número de producto que desea comprar: ");
 }
 
 function mostrarTotal(){
@@ -34,9 +34,9 @@ function mostrarMenu(){
                 }while(!parseInt(cantidad) || cantidad <= 0);
             }break;
             case 4:{
-                precio=0.2;
+                precio=2;
                 do{
-                    cantidad= parseInt(prompt("[4] Pan unid ----------- S/0.20 \n ¿Cuántos panes desea comprar?"));
+                    cantidad= parseInt(prompt("[4] Pan x10unid ----------- S/2.00 \n ¿Cuántos panes desea comprar?"));
                 }while(!parseInt(cantidad) || cantidad <= 0);
             }break;
             case 5:{
